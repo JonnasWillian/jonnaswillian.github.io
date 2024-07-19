@@ -28,6 +28,16 @@ window.onclick = function(event) {
     if (event.target == modal4) {
         closeModal4();
     }
+
+    let modal5 = document.getElementById('myModal5');
+    if (event.target == modal5) {
+        closeModal5();
+    }
+
+    let modal6 = document.getElementById('myModal6');
+    if (event.target == modal6) {
+        closeModal6();
+    }
 }
 
 let slideIndex = 1;
@@ -154,4 +164,70 @@ function showSlides4(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex4 - 1].style.display = "block";
+}
+
+function openModal5() {
+    document.getElementById('myModal5').style.display = "block";
+}
+
+
+function closeModal5() {
+    document.getElementById('myModal5').style.display = "none";
+}
+
+let slideIndex5 = 1;
+showSlides5(slideIndex5);
+
+
+function plusSlides5(n) {
+    showSlides5(slideIndex5 += n);
+}
+
+
+function currentSlide5(n) {
+    showSlides5(slideIndex5 = n);
+}
+
+function showSlides5(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides5");
+    if (n > slides.length) { slideIndex5 = 1 }
+    if (n < 1) { slideIndex5 = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex5 - 1].style.display = "block";
+}
+
+function openModal6() {
+    document.getElementById('myModal6').style.display = "block";
+}
+
+
+function closeModal6() {
+    document.getElementById('myModal6').style.display = "none";
+}
+
+let slideIndex6 = 1;
+showSlides6(slideIndex6);
+
+
+function plusSlides6(n) {
+    showSlides6(slideIndex6 += n);
+}
+
+
+function currentSlide6(n) {
+    showSlides6(slideIndex6 = n);
+}
+
+function showSlides6(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides6");
+    if (n > slides.length) { slideIndex6 = 1 }
+    if (n < 1) { slideIndex6 = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex6 - 1].style.display = "block";
 }
