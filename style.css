@@ -133,9 +133,9 @@ hr {
 
 .sec-main {
   position: relative;
-  height: 800px;
-  background: url("assets/perfil.jpg") no-repeat center center;
-  background-size: cover;
+  height: 600px;
+  background: url("assets/perfil.jpeg") no-repeat center center;
+  background-size: contain;
 
   &:after {
     content: "";
@@ -357,7 +357,6 @@ footer {
 .imageApp {
   margin: auto;
   display: block;
-  width: 20% !important;
   height: auto;
 }
 
