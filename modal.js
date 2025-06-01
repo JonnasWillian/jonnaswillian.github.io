@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS animation
     AOS.init({
         duration: 800,
         easing: 'ease-in-out',
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mirror: false
     });
 
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 
-                // Close mobile menu if open
                 const navbarCollapse = document.querySelector('.navbar-collapse');
                 if (navbarCollapse.classList.contains('show')) {
                     const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
@@ -44,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Back to top button
     const backToTopButton = document.querySelector('.back-to-top');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
@@ -62,26 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Here you would typically send the form data to a server
-            // For demo purposes, we'll just show an alert
+
             alert('Obrigado pela sua mensagem! Entrarei em contato em breve.');
             this.reset();
         });
     }
+});
 
-    // Project filter (if you want to add filtering later)
-    // const filterButtons = document.querySelectorAll('.project-filter button');
-    // filterButtons.forEach(button => {
-    //     button.addEventListener('click', function() {
-    //         // Filter logic would go here
-    //     });
-    // });
+const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl, {
+        trigger: 'hover'
+    });
 });
 
 function openModal() {
@@ -360,8 +351,6 @@ function showSlides7(n) {
     }
     slides[slideIndex7 - 1].style.display = "block";
 }
-
-//
 
 function openModal8() {
     document.getElementById('myModal8').style.display = "block";
