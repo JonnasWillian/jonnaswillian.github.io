@@ -3,555 +3,588 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonnas Willian - Desenvolvedor Full-Stack</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>Jonnas Willian - Desenvolvedor Full Stack | Especialista em Laravel & React</title>
+    <meta name="description" content="Desenvolvedor Full Stack com experiência em liderança técnica, Laravel, React, Docker e Azure. Transformando ideias em soluções tecnológicas eficientes.">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header role="header">
-          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-              <div class="navbar-header">
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
-                  
-                  <span class="icon-bar"></span>
-                  
-                  <span class="icon-bar"></span>
-                  
-                  <span class="icon-bar"></span>
-                </button>
-      
-                <a href="#" class="navbar-brand">Jonnas Willian</a>
-              </div>
-      
-              <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right js-nav">
-                  <li><a href="#home">Início</a></li>
-      
-                  <li><a href="#about">Sobre mim</a></li>
-      
-                  <li><a href="#services">Serviços</a></li>
-      
-                  <li><a href="#testimonials">Experiência</a></li>
-
-                  <li><a href="#cursos">Cursos</a></li>
-
-                  <li><a href="#folio">Portfolio</a></li>
-      
-                  <li><a href="#footer">Contato</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Jonnas<span class="text-primary">Willian</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
-              </div>
             </div>
-          </nav>
-        </header>
+        </div>
+    </nav>
 
-        <section id="home" class="sec-main animated-element-left">
-          <h1 class="main-heading">Jonnas Willian Full-Stack Developer</h1>
-        </section>
-
-        <section id="about" class="sec-about">
-          <div class="container">
-            <h1>Sobre mim</h1>
-      
-            <hr />
-      
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <p>Olá, me chamo Jonnas Willian sou um desenvolvedor Full-Stack, possuo 4 anos de experiência na área.</p>
-                <p>Desenvolvo em JavaScript, ReactJS, ReactNative, TypeScript, Angular, PHP, CodeIgniter, Laravel, MYSQL e Wordpress.</p>
-                <p>Formado em ciência da computação e pós graduado em Big Data, Analytcs e BI Aplicado a negócios.</p>
-                <p>Número de contato WathsappApp: (71) 99734-3101.</p>
-                <br>
-                <p><b><a href="assets/Curriulo Jonnas Willian.pdf" download="JonnasWillianCurrículo.pdf" target="_blank">Download do currículo</a></b></p>
-              </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h4 class="text-primary mb-3">OLÁ, EU SOU</h4>
+                    <h1 class="display-4 fw-bold mb-4">Jonnas Willian</h1>
+                    <h2 class="mb-4">Desenvolvedor Full Stack</h2>
+                    <p class="lead mb-4">Especialista em Laravel, React e soluções em nuvem. Transformando ideias em realidade digital com código limpo e arquitetura escalável.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">Contate-me</a>
+                        <a href="assets/Curriulo Jonnas Willian.pdf" download class="btn btn-outline-light btn-lg px-4">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-img">
+                        <img src="assets/perfil.jpg" alt="Jonnas Willian" class="img-fluid rounded-circle border border-5 border-primary">
+                        <div class="tech-icons">
+                            <span class="icon laravel"><i class="fab fa-laravel"></i></span>
+                            <span class="icon react"><i class="fab fa-react"></i></span>
+                            <span class="icon docker"><i class="fab fa-docker"></i></span>
+                            <span class="icon azure"><i class="fab fa-microsoft"></i></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="services" class="sec-services">
-          <div class="container">
-            <h1>Serviços</h1>
-      
-            <hr />
-      
-            <div class="row">
-              <div class="col-sm-4">
-                <i class="fa fa-4x fa-code"></i>
-                <h2 class="h3">Desenvolvimento Web</h2>
-      
-                <p>Desenvolvimento de plataformas e páginas web, sistemas, landPages, sites institucionais e ferramentas web.</p>
-              </div>
-      
-              <div class="col-sm-4">
-                <i class="fa fa-4x fa-tablet"></i>
-                <h2 class="h3">Mobile</h2>
-      
-                <p>Criação de aplicativos Android e IOS. Cadastro de usuários, gerenciamento de acesso, conexão com API's e customização de aplicações.</p>
-              </div>
-
-              <div class="col-sm-4">
-                <i class="fa fa-4x fa-line-chart"></i>
-      
-                <h2 class="h3">Desenvolvimento e criação de API's</h2>
-      
-                <p>Desenvolvo e conecto a API's. Otimizo funções, realizado refatoração de código e mantenho alto desempenho das aplicações, gerenciamento de banco de dados e rotinas.</p>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Sobre <span class="text-primary">Mim</span></h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Conheça um pouco mais sobre minha jornada profissional</p>
             </div>
-          </div>
-        </section>
-
-        <section id="testimonials" class="sec-about animated-element-left">
-          <div class="container">
-            <h1>Experiência profissional</h1>
-      
-            <hr />
-      
-            <div class="row">
-              <div class="col-sm-4">
-                <h2 class="h3">Desenvolvedor freelancer - Autônomo</h2>
-                <p class="text-center">Trabalho em desenvolvimento de sites, sistemas, correções de bugs, criação de novas ferramentas e automações de tarefas.</p>
-      
-                <p class="text-right">&mdash;  04/2020 e ainda disponível</p>
-              </div>
-
-              <div class="col-sm-4">
-                <h2 class="h3">Sudoeste informática  - Analista de suporte</h2>
-                <p class="text-center">Trabalho de homologação do sistema , teste de sistemas e verificação de dados.</p>
-      
-                <p class="text-right">12/2021 á 03/2022</p>
-              </div>
-      
-              <div class="col-sm-4">
-                <h2 class="h3">Flash Entregas Brasil  - Estagiário de desenvolvimento</h2>
-                <p class="text-center">
-                  Criação de páginas, realização de consultas do tipo SQL como soma e filtro de dados, soma de arquivos, tratativas de recuperação de senha e tratativas de funcionalidades para perfis e telas diferentes.
-                </p>
-      
-                <p class="text-right">03/2022 á 07/2022</p>
-              </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3 class="mb-4">Desenvolvedor Full Stack com experiência em liderança técnica</h3>
+                    <p>Com formação em Ciência da Computação e pós-graduação em Big Data, Analytics e BI, possuo 4+ anos de experiência no desenvolvimento de sistemas web complexos.</p>
+                    <p>Especializado em refatoração de código Laravel, desenvolvimento de REST APIs, otimização de consultas SQL e implementação de CI/CD com Docker e Azure.</p>
+                    <p>Atualmente atuo como Desenvolvedor Pleno na Horizon, liderando o time técnico e implementando melhorias arquiteturais em sistemas distribuídos.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="info-list">
+                                <li><strong>Nome:</strong> Jonnas Willian Ferreira Nogueira</li>
+                                <li><strong>Email:</strong> jonaswillian2@gmail.com</li>
+                                <li><strong>WhatsApp:</strong> (71) 99734-3101</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="info-list">
+                                <li><strong>Experiência:</strong> 4+ anos</li>
+                                <li><strong>Freelance:</strong> Disponível</li>
+                                <li><strong>Localização:</strong> Salvador, BA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="skills-progress">
+                        <h4 class="mb-4">Minhas Especialidades</h4>
+                        
+                        <div class="progress-item">
+                            <div class="d-flex justify-content-between">
+                                <span>Laravel</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="d-flex justify-content-between">
+                                <span>React/React Native</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="d-flex justify-content-between">
+                                <span>Docker & CI/CD</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="d-flex justify-content-between">
+                                <span>Microsoft Azure</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="row">
-              <div class="col-sm-4">
-                <h2 class="h3">GIUSOFT Tecnologia - Desenvolvedor de software</h2>
-                <p class="text-center">Desenvolvimento de novas ferramentas para sistemas logísticos e aplicações web, manutenção de código para adaptações ao cliente, tratar bug’s e refatoração de código, criação de novos relatórios e edição dos já existente, conexão á Api’s e tratativas de retorno.
-                <br>Implementação de novas Tecnologias e ferramentas na empresa como por exemplo: Docker e LaraDock para atualização de sistemas já existentes.</p>
-        
-                  <p class="text-right">07/2022 - 08/2024</p>
-              </div>
-
-              <div class="col-sm-4">
-                <h2 class="h3">KBF Sistemas e consultoria - Desenvolvedor de software</h2>
-                <p class="text-center">Desenvolvimento de novas ferramentas para sistemas o sistema, controle de gerenciamento de ferramentas para inserção de informações, desenvolvimento de relatórios e edição dos dados.
-                <br>Gerenciamento do banco de dados e desenvolvimento de VIEWS e CRONS para o sistema.</p>
-        
-                  <p class="text-right">09/2024 até o presente momento</p>
-              </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Minhas <span class="text-primary">Habilidades</span></h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Tecnologias que domino e utilizo no dia a dia</p>
             </div>
-          </div>
-        </section>
-
-        <section id="cursos" class="sec-testimonials animated-element-top">
-          <div class="container">
-            <h1>Cursos</h1>
-            <hr />
-      
-            <div class="row experience">
-              <div class="col-sm-4">
-                <p class="text-center"><b>Start .Net</b>: Treinamento para criação e teste em aplicações .Net</p>
-      
-                <p class="text-right">&mdash; <a href="https://www.dio.me/certificate/5EF48E73/share" target="_blank">Confira o certificado digital</a></p>
-              </div>
-
-              <div class="col-sm-4">
-                <p class="text-center"><b>ASP.NET Core</b>: Curso de aplicações ASP.NET Core</p>
-      
-                <p class="text-right">&mdash; <a href="https://cursos.alura.com.br/degree/certificate/e54ea0b5-280b-44e4-8bf6-04ba0d06fda3" target="_blank">Confira o certificado digital</a></p>
-              </div>
-      
-              <div class="col-sm-4">
-                <p class="text-center"><b>Code Anywhere</b>: Treinamento para desenvolvimento de aplições web utilizando .Net</p>
-      
-                <p class="text-right">&mdash; <a href="https://certificates.digitalinnovation.one/9B15C536" target="_blank">Confira o certificado digital</a></p>
-              </div>
+            
+            <div class="row mt-5 g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-icon bg-primary">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Linguagens</h4>
+                        <ul class="skill-tags">
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon bg-primary">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h4>Frameworks</h4>
+                        <ul class="skill-tags">
+                            <li>Laravel</li>
+                            <li>React/React Native</li>
+                            <li>Vue.js</li>
+                            <li>Angular</li>
+                            <li>NestJS</li>
+                            <li>ASP.NET Core</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-icon bg-primary">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>DevOps & Cloud</h4>
+                        <ul class="skill-tags">
+                            <li>Docker</li>
+                            <li>Azure</li>
+                            <li>CI/CD</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-icon bg-primary">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Banco de Dados</h4>
+                        <ul class="skill-tags">
+                            <li>MySQL</li>
+                            <li>SQL Server</li>
+                            <li>PostgreSQL</li>
+                            <li>Otimização SQL</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon bg-primary">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Análise de Dados</h4>
+                        <ul class="skill-tags">
+                            <li>Big Data</li>
+                            <li>Business Intelligence</li>
+                            <li>Relatórios</li>
+                            <li>ETL</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-icon bg-primary">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Outras Habilidades</h4>
+                        <ul class="skill-tags">
+                            <li>REST APIs</li>
+                            <li>Code Review</li>
+                            <li>Arquitetura de Software</li>
+                            <li>Automação</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div class="row experience">
-              <div class="col-sm-4">
-                <p class="text-center"><b>Linux Onboarding</b>: Curso preparatório para DevOps em servidores Linux</p>
-      
-                <p class="text-right">&mdash; <a href="https://cursos.alura.com.br/certificate/b4138a36-c750-4052-b293-09d6f7702c1a" target="_blank">Confira o certificado digital</a></p>
-              </div>
-      
-              <div class="col-sm-4">
-                <p class="text-center"><b>Java & AWS</b>: Treinamento para desenvolvimento de aplições Java hospedadas em AWS</p>
-      
-                <p class="text-right">&mdash; <a href="https://certificates.digitalinnovation.one/2D249608" target="_blank">Confira o certificado digital</a></p>
-              </div>
-      
-              <div class="col-sm-4">
-                <p class="text-center"><b>Laravel</b>: Curso de desenvolvimento de aplicações Laravel</p>
-      
-                <p class="text-right">&mdash; <a href="https://cursos.alura.com.br/degree/certificate/723935f4-33d4-4540-b2f2-f486c307b671" target="_blank">Confira o certificado digital</a></p>
-              </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Minha <span class="text-primary">Jornada</span></h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Experiência profissional e formação acadêmica</p>
             </div>
-            <hr>
-            <div class="row experience">
-              <div class="col-sm-4">
-                <p class="text-center"><b>Formação Full-Stack React Alura</b>: Treinamento intensivo de desenvolvimento e boas práticas de aplicações react com Node</p>
-      
-                <p class="text-right">&mdash; <a href="https://cursos.alura.com.br/degree/certificate/b1c38c78-9393-4d10-bc07-01919418d739?lang" target="_blank">Confira o certificado digital</a></p>
-              </div>
-
-              <div class="col-sm-4">
-                <p class="text-center"><b>React Native integrando um App à Web API</b>: Desenvolvendo um aplicativo e conectando a uma página de administração web</p>
-      
-                <p class="text-right">&mdash; <a href="https://cursos.alura.com.br/degree/certificate/99924f5a-8975-4fc3-9aa8-4b64c477c15d?lang" target="_blank">Confira o certificado digital</a></p>
-              </div>
+            
+            <div class="timeline mt-5">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2025 - Atual</div>
+                    <div class="timeline-content">
+                        <h4>Desenvolvedor Pleno</h4>
+                        <h5>HORIZON</h5>
+                        <ul>
+                            <li>Refatoração e otimização de código Laravel com implementação de melhorias em consultas SQL</li>
+                            <li>Desenvolvimento de REST APIs para integração com múltiplos sistemas externos</li>
+                            <li>Coordenação do time técnico com distribuição estratégica de atividades e mentoria</li>
+                            <li>Implementação de CI/CD com Docker seguindo as melhores práticas de DevOps</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h4>Desenvolvedor Full Stack</h4>
+                        <h5>KBF Sistemas e Consultoria</h5>
+                        <ul>
+                            <li>Desenvolvimento, manutenção e refatoração em sistemas de informação</li>
+                            <li>Criação de relatórios e ferramentas de análise</li>
+                            <li>Integração com sistemas externos e exportação de dados</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h4>Desenvolvedor Full Stack</h4>
+                        <h5>GIUSOFT Tecnologia</h5>
+                        <ul>
+                            <li>Refatoração de código para redução de custos e otimização de recursos</li>
+                            <li>Integração de APIs e desenvolvimento de automações</li>
+                            <li>Implementação de Docker e LaraDock para modernização de sistemas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h4>Pós-graduação em Big Data, Analytics e BI</h4>
+                        <h5>Formação Acadêmica</h5>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2018 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>Bacharel em Ciência da Computação</h4>
+                        <h5>Formação Acadêmica</h5>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="folio" class="sec-folio">
-          <div id="myModal" class="modal">
-              <div class="modal-content">
-
-                  <div class="mySlides">
-                      <div class="numbertext">1 / 5</div>
-                      <img src="assets/corteCerto/Corte certo 1.jpeg" style="width:100%">
-                      <div class="caption">Sistema de gerenciamento de serviços, onde o usuário pode se cadastrar e registrar horário de atendimento, sistema também deixa cadastrar fluxo de pedidos e exibe contato dos usuários, front em React e Backend feito em Node.js. <a href="https://sistemacortecerto.com/" target="_blank">Ver sistema</a></div>
-                  </div>
-
-                  <div class="mySlides">
-                      <div class="numbertext">2 / 5</div>
-                      <img src="assets/corteCerto/Corte certo 2.jpeg" style="width:100%">
-                      <div class="caption">Sistema de gerenciamento de serviços, onde o usuário pode se cadastrar e registrar horário de atendimento, sistema também deixa cadastrar fluxo de pedidos e exibe contato dos usuários, front em React e Backend feito em Node.js. <a href="https://sistemacortecerto.com/" target="_blank">Ver sistema</a></div>
-                  </div>
-
-                  <div class="mySlides">
-                      <div class="numbertext">3 / 5</div>
-                      <img src="assets/corteCerto/Corte certo 3.jpeg" style="width:100%">
-                      <div class="caption">Sistema de gerenciamento de serviços, onde o usuário pode se cadastrar e registrar horário de atendimento, sistema também deixa cadastrar fluxo de pedidos e exibe contato dos usuários, front em React e Backend feito em Node.js. <a href="https://sistemacortecerto.com/" target="_blank">Ver sistema</a></div>
-                  </div>
-
-                  <div class="mySlides">
-                      <div class="numbertext">4 / 5</div>
-                      <img src="assets/corteCerto/Corte certo 4.jpeg" style="width:100%">
-                      <div class="caption">Sistema de gerenciamento de serviços, onde o usuário pode se cadastrar e registrar horário de atendimento, sistema também deixa cadastrar fluxo de pedidos e exibe contato dos usuários, front em React e Backend feito em Node.js. <a href="https://sistemacortecerto.com/" target="_blank">Ver sistema</a></div>
-                  </div>
-
-                  <div class="mySlides">
-                      <div class="numbertext">5 / 5</div>
-                      <img src="assets/corteCerto/Corte certo 5.jpeg" style="width:100%">
-                      <div class="caption">Sistema de gerenciamento de serviços, onde o usuário pode se cadastrar e registrar horário de atendimento, sistema também deixa cadastrar fluxo de pedidos e exibe contato dos usuários, front em React e Backend feito em Node.js. <a href="https://sistemacortecerto.com/" target="_blank">Ver sistema</a></div>
-                  </div>
-
-                  <!-- Controles de navegação -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-              </div>
-          </div>
-
-          <div id="myModal2" class="modal">
-            <div class="modal-content">
-
-                <div class="mySlides2">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/duartesAdvogacia/DuartesAdv 1.jpeg" style="width:100%">
-                    <div class="caption">Land page comercial para apresentação de serviço especializado, página feita em WordPress.<a href="https://duartesadv.com.br/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides2">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/duartesAdvogacia/DuartesAdv 2.jpeg" style="width:100%">
-                    <div class="caption">Land page comercial para apresentação de serviço especializado, página feita em WordPress.<a href="https://duartesadv.com.br/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides2">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/duartesAdvogacia/DuartesAdv 3.jpeg" style="width:100%">
-                    <div class="caption">Land page comercial para apresentação de serviço especializado, página feita em WordPress.<a href="https://duartesadv.com.br/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides2">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="assets/duartesAdvogacia/DuartesAdv 4.jpeg" style="width:100%">
-                  <div class="caption">Land page comercial para apresentação de serviço especializado, página feita em WordPress.<a href="https://duartesadv.com.br/" target="_blank">Ver sistema</a></div>
-              </div>
-
-                <!-- Controles de navegação -->
-                <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Meu <span class="text-primary">Portfólio</span></h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Alguns dos meus projetos recentes</p>
             </div>
-          </div>
-
-          <div id="myModal3" class="modal">
-            <div class="modal-content">
-
-                <div class="mySlides3">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/flashPlay/flashplay 1.jpeg" style="width:100%">
-                    <div class="caption">Sistema de gerenciamento e qualificação de candidatos para vagas empresarias.<a href="https://www.flashplayhr.com.br/#/" target="_blank">Ver sistema</a></div>
+            
+            <div class="row mt-5 g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/devsCodyOfc/devscody1.jpeg" alt="DevsCody Landing Page" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://devscody.com/" target="_blank" class="btn btn-primary btn-sm">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>DevsCody Landing Page</h4>
+                            <p>Landing page profissional desenvolvida com Vue.js com animações modernas e interativas.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>JavaScript</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="mySlides3">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/flashPlay/flashplay 2.jpeg" style="width:100%">
-                    <div class="caption">Sistema de gerenciamento e qualificação de candidatos para vagas empresarias.<a href="https://www.flashplayhr.com.br/#/" target="_blank">Ver sistema</a></div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/finance/finance1.jpeg" alt="Plataforma de Finanças" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://finance.devscody.com/" target="_blank" class="btn btn-primary btn-sm">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Plataforma de Finanças</h4>
+                            <p>Sistema completo de gestão financeira com Laravel e Vue.js, incluindo dashboard interativo.</p>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="mySlides3">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/flashPlay/flashplay 3.jpeg" style="width:100%">
-                    <div class="caption">Sistema de gerenciamento e qualificação de candidatos para vagas empresarias.<a href="https://www.flashplayhr.com.br/#/" target="_blank">Ver sistema</a></div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/flashPlay/flashplay 1.jpeg" alt="Sistema de RH Flash Play" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://www.flashplayhr.com.br/" target="_blank" class="btn btn-primary btn-sm">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sistema de RH Flash Play</h4>
+                            <p>Aplicação web completa para recrutamento e seleção com React (frontend) e NestJS (backend).</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>NestJS</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="mySlides3">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="assets/flashPlay/flashplay 4.jpeg" style="width:100%">
-                  <div class="caption">Sistema de gerenciamento e qualificação de candidatos para vagas empresarias.<a href="https://www.flashplayhr.com.br/#/" target="_blank">Ver sistema</a></div>
-              </div>
-
-                <!-- Controles de navegação -->
-                <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides3(1)">&#10095;</a>
-
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/duartesAdvogacia/DuartesAdv1.jpeg" alt="Site para Escritório de Advocacia" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://duartesadv.com.br/" target="_blank" class="btn btn-primary btn-sm">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Escritório de Advocacia</h4>
+                            <p>Site institucional com WordPress, personalização de tema e plugins, otimização SEO.</p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>PHP</span>
+                                <span>SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/corteCerto/Cortecerto1.jpeg" alt="Sistema Corte Certo" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://sistemacortecerto.com/" target="_blank" class="btn btn-primary btn-sm">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sistema Corte Certo</h4>
+                            <p>Sistema de gerenciamento de serviços com agendamento, desenvolvido com React e Node.js.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/appBurguerShop/AppBurguerShop1.jpeg" alt="App Burguer Shop" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary btn-sm">Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>App Burguer Shop</h4>
+                            <p>Aplicativo mobile para divulgação de produtos de lanchonete, desenvolvido com React Native.</p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>JavaScript</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div id="myModal4" class="modal">
-            <div class="modal-content">
-
-                <div class="mySlides4">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/devsCody/devscody 1.jpeg" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em JavaScript.<a href="https://devscody.web.app/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides4">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/devsCody/devscody 2.jpeg" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em JavaScript.<a href="https://devscody.web.app/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides4">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/devsCody/devscody 3.jpeg" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em JavaScript.<a href="https://devscody.web.app/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides4">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="assets/devsCody/devscody 4.jpeg" style="width:100%">
-                  <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em JavaScript.<a href="https://devscody.web.app/" target="_blank">Ver sistema</a></div>
-              </div>
-
-                <!-- Controles de navegação -->
-                <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides4(1)">&#10095;</a>
-
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Entre em <span class="text-primary">Contato</span></h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Estou disponível para oportunidades e projetos desafiadores</p>
             </div>
-          </div>
-
-          <div id="myModal5" class="modal">
-            <div class="modal-content">
-
-                <div class="mySlides5">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/burguerShop/burguerShop1.jpeg" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de divulgar produtos de uma lanchonete.<a href="https://burguer-ae496.web.app/" target="_blank">Ver LandPage</a></div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Vamos conversar!</h3>
+                        <p>Estou sempre aberto a discutir novos projetos, oportunidades criativas ou parcerias. Entre em contato e vamos fazer algo incrível juntos!</p>
+                        
+                        <div class="contact-details mt-4">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>Localização</h5>
+                                    <p>Salvador, Bahia - Brasil</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>Email</h5>
+                                    <p>jonaswillian2@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>Telefone/WhatsApp</h5>
+                                    <p>(71) 99734-3101</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/JonnasWilliam" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/JonnasWilliam" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5571997343101" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="mySlides5">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/burguerShop/burguerShop2.jpeg" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de divulgar produtos de uma lanchonete.<a href="https://burguer-ae496.web.app/" target="_blank">Ver LandPage</a></div>
+                
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Seu Nome" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Seu Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Assunto">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
                 </div>
-
-                <div class="mySlides5">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/burguerShop/burguerShop3.jpeg" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de divulgar produtos de uma lanchonete.<a href="https://burguer-ae496.web.app/" target="_blank">Ver LandPage</a></div>
-                </div>
-
-                <div class="mySlides5">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="assets/burguerShop/burguerShop4.jpeg" style="width:100%">
-                  <div class="caption">LandPage comercial com o intuito de divulgar produtos de uma lanchonete.<a href="https://burguer-ae496.web.app/" target="_blank">Ver LandPage</a></div>
-              </div>
-
-                <!-- Controles de navegação -->
-                <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides5(1)">&#10095;</a>
-
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div id="myModal6" class="modal">
-            <div class="modal-content">
-
-                <div class="mySlides6">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/appBurguerShop/AppBurguerShop1.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">Aplicativo comercial com o intuito de divulgar produtos de uma lanchonete.</div>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Jonnas Willian. Todos os direitos reservados.</p>
                 </div>
-
-                <div class="mySlides6">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/appBurguerShop/AppBurguerShop2.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">Aplicativo comercial com o intuito de divulgar produtos de uma lanchonete.</div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
                 </div>
-
-                <div class="mySlides6">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/appBurguerShop/AppBurguerShop3.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">Aplicativo comercial com o intuito de divulgar produtos de uma lanchonete.</div>
-                </div>
-
-                <div class="mySlides6">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="assets/appBurguerShop/AppBurguerShop4.jpeg" class="imageApp" style="width:100%">
-                  <div class="caption">Aplicativo comercial com o intuito de divulgar produtos de uma lanchonete.</div>
-              </div>
-
-                <!-- Controles de navegação -->
-                <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides6(1)">&#10095;</a>
-
             </div>
-          </div>
+        </div>
+    </footer>
 
-          <div id="myModal7" class="modal">
-            <div class="modal-content">
-                <div class="mySlides7">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/devsCodyOfc/devscody1.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em VUE.<a href="https://devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-                <div class="mySlides7">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/devsCodyOfc/devscody2.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em VUE.<a href="https://devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides7">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/devsCodyOfc/devscody3.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em VUE.<a href="https://devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides7">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="assets/devsCodyOfc/devscody4.jpeg" class="imageApp" style="width:100%">
-                  <div class="caption">LandPage comercial com o intuito de captar clientes para vendas de serviços, feito em VUE.<a href="https://devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <a class="prev" onclick="plusSlides7(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides7(1)">&#10095;</a>
-            </div>
-          </div>
-
-          <div id="myModal8" class="modal">
-            <div class="modal-content">
-                <div class="mySlides8">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="assets/finance/finance1.jpeg" class="imageApp" style="width:180rem">
-                    <div class="caption">Sistema de gerenciamento financeiro dosmestico, feito para analíse e consulta financeira, desenvolvimento com Laravel e VUE.<a href="https://finance.devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides8">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="assets/finance/finance2.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">Sistema de gerenciamento financeiro dosmestico, feito para analíse e consulta financeira, desenvolvimento com Laravel e VUE.<a href="https://finance.devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <div class="mySlides8">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="assets/finance/finance3.jpeg" class="imageApp" style="width:100%">
-                    <div class="caption">Sistema de gerenciamento financeiro dosmestico, feito para analíse e consulta financeira, desenvolvimento com Laravel e VUE.<a href="https://finance.devscody.com/" target="_blank">Ver sistema</a></div>
-                </div>
-
-                <a class="prev" onclick="plusSlides8(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides8(1)">&#10095;</a>
-            </div>
-          </div>
-
-          <div class="container">
-            <h1>Portfolio</h1>
-      
-            <hr />
-      
-            <div class="row">
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/devsCodyOfc/devscody1.jpeg" alt="devsCody" onclick="openModal7();currentSlide7(1)"/>
-              </div>
-
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/finance/finance1.jpeg" alt="Finance" onclick="openModal8();currentSlide8(1)"/>
-              </div>
-
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/duartesAdvogacia/DuartesAdv 1.jpeg" alt="Duartes Advogacia" onclick="openModal2();currentSlide2(1)"/>
-              </div>
-            </div>
-      
-            <div class="row">
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/flashPlay/flashplay 1.jpeg" alt="flashPlay" onclick="openModal3();currentSlide3(1)"/>
-              </div>
-
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/devsCody/devscody 1.jpeg" alt="devsCody" onclick="openModal4();currentSlide4(1)"/>
-              </div>
-
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/burguerShop/burguerShop1.jpeg" alt="devsCody" onclick="openModal5();currentSlide5(1)"/>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                <img class="center-block thumbnail" src="assets/corteCerto/Corte certo 1.jpeg" alt="Sistema corte certo" onclick="openModal();currentSlide(1)"/>
-              </div>
-            </div>
-                  
-          </div>
-        </section>
-      
-        <footer id="footer">
-          <div class="container">
-            <ul class="soc-media-ul">
-                <li style="color:#ffff">© 2025 Jonnas Willian</li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5571997343101&text=Ol%C3%A1,%20vim%20pelo%20seu%20portfolio%20online" class="fa fa-phone" target="_blank"></a>
-                </li>
-        
-                <li>
-                    <a href="https://github.com/JonnasWillian" class="fa fa-github" target="_blank"></a>
-                </li>
-        
-                <li>
-                    <a href="https://www.linkedin.com/in/jonnaswillian/" class="fa fa-linkedin" target="_blank"></a>
-                </li>
-        
-                <li>
-                    <a href="mailto:jonnasnogueira2@gmail.com" class="fa fa-envelope"></a>
-                </li>
-            </ul>
-          </div>
-        </footer>
-    </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Main JS -->
+    <script src="modal.js"></script>
 </body>
-
-<script src="modal.js"></script>
-<script>
-
-</script>
 </html>
