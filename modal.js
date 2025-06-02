@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // const contactForm = document.querySelector('.contact-form');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function(e) {
+    //         e.preventDefault();
 
-            alert('Obrigado pela sua mensagem! Entrarei em contato em breve.');
-            this.reset();
-        });
-    }
+    //         alert('Obrigado pela sua mensagem! Entrarei em contato em breve.');
+    //         this.reset();
+    //     });
+    // }
 });
 
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
