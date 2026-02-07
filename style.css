@@ -209,69 +209,9 @@ img {
 .tech-icons .linux { background-color: #000000; animation-delay: 1.8s; }
 .tech-icons .azure { background-color: #0078D4; animation-delay: 2s; }
 
-.tech-icons .icon.laravel {
-  background-color: #FF2D20;
-  animation-delay: 0s;
-}
-
-.tech-icons .icon.react {
-  background-color: #61DAFB;
-  animation-delay: 0.5s;
-}
-
-.tech-icons .icon.docker {
-  background-color: #2496ED;
-  animation-delay: 1s;
-}
-
-.tech-icons .icon.azure {
-  background-color: #0078D4;
-  animation-delay: 1.5s;
-}
-
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
-}
-
-
-@media (max-width: 992px) {
-  .hero-img {
-      margin-top: 2rem;
-  }
-  
-  .tech-icons .icon {
-      width: 36px;
-      height: 36px;
-      font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .tech-icons {
-      gap: 10px;
-  }
-  
-  .tech-icons .icon {
-      width: 32px;
-      height: 32px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-img img {
-      max-width: 250px;
-  }
-  
-  .tech-icons {
-      gap: 8px;
-  }
-  
-  .tech-icons .icon {
-      width: 30px;
-      height: 30px;
-      font-size: 0.9rem;
-  }
 }
 
 .info-list {
@@ -353,7 +293,10 @@ img {
   color: var(--dark-color);
 }
 
-/* Timeline responsiva - substitua apenas essa parte */
+/* ==========================================
+   TIMELINE - VERSÃO CORRIGIDA E FINAL
+   ========================================== */
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -361,6 +304,7 @@ img {
   padding: 2rem 0;
 }
 
+/* Linha vertical central */
 .timeline::after {
   content: '';
   position: absolute;
@@ -371,6 +315,7 @@ img {
   left: 50%;
   margin-left: -2px;
   border-radius: 2px;
+  z-index: 0;
 }
 
 .timeline-item {
@@ -380,6 +325,7 @@ img {
   box-sizing: border-box;
 }
 
+/* Círculos da timeline */
 .timeline-item::after {
   content: '';
   position: absolute;
@@ -389,7 +335,7 @@ img {
   border: 4px solid var(--primary-color);
   border-radius: 50%;
   top: 18px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .timeline-item:nth-child(odd) {
@@ -408,14 +354,17 @@ img {
   left: -12px;
 }
 
+/* Conteúdo da timeline */
 .timeline-content {
   padding: 1.5rem;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   position: relative;
+  z-index: 1;
 }
 
+/* Data da timeline */
 .timeline-date {
   position: absolute;
   min-width: 130px;
@@ -428,6 +377,7 @@ img {
   font-size: 0.95rem;
   top: 12px;
   white-space: nowrap;
+  z-index: 3;
 }
 
 .timeline-item:nth-child(odd) .timeline-date {
@@ -436,58 +386,6 @@ img {
 
 .timeline-item:nth-child(even) .timeline-date {
   left: -160px;
-}
-
-@media (max-width: 991px) {
-  .timeline::after {
-      left: 30px;
-  }
-
-  .timeline-item {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 20px;
-      left: 0 !important;
-  }
-
-  .timeline-item::after {
-      left: 20px;
-  }
-
-  .timeline-date {
-      position: static;
-      display: inline-block;
-      margin-bottom: 12px;
-      margin-left: 0;
-      width: auto;
-      font-size: 0.9rem;
-  }
-
-  .timeline-item:nth-child(odd) .timeline-date,
-  .timeline-item:nth-child(even) .timeline-date {
-      right: auto !important;
-      left: auto !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .timeline-item {
-      padding-left: 55px;
-      padding-right: 15px;
-  }
-
-  .timeline-item::after {
-      left: 14px;
-  }
-
-  .timeline-content {
-      padding: 1.25rem;
-  }
-
-  .timeline-date {
-      font-size: 0.85rem;
-      padding: 6px 10px;
-  }
 }
 
 .project-card {
@@ -716,9 +614,12 @@ footer a:hover {
   opacity: 1;
 }
 
+/* ==========================================
+   MEDIA QUERIES
+   ========================================== */
 
-
-@media (max-width: 991.98px) {
+/* Tablets e menores */
+@media (max-width: 991px) {
   .hero-section::before {
       width: 100%;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -735,36 +636,42 @@ footer a:hover {
       margin-top: 2rem;
   }
   
-  .timeline::after {
-      left: 31px;
+  .tech-icons .icon {
+      width: 36px;
+      height: 36px;
+      font-size: 1rem;
   }
-  
+
+  /* Timeline Mobile - Tablets */
+  .timeline::after {
+      left: 30px;
+  }
+
   .timeline-item {
       width: 100%;
       padding-left: 70px;
-      padding-right: 25px;
+      padding-right: 20px;
+      left: 0 !important;
   }
-  
-  .timeline-item:nth-child(even) {
-      left: 0;
-  }
-  
+
   .timeline-item::after {
-      left: 21px;
+      left: 20px !important;
+      right: auto !important;
   }
-  
-  .timeline-item:nth-child(odd) .timeline-date,
-  .timeline-item:nth-child(even) .timeline-date {
-      position: relative;
-      top: auto;
-      left: auto;
-      right: auto;
-      margin-bottom: 1rem;
+
+  .timeline-date {
+      position: static !important;
       display: inline-block;
+      margin-bottom: 12px;
+      margin-left: 0;
+      width: auto;
+      font-size: 0.9rem;
+      right: auto !important;
+      left: auto !important;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .section-title {
       font-size: 2rem;
   }
@@ -778,9 +685,19 @@ footer a:hover {
       max-width: 300px;
       margin-top: 2rem;
   }
+
+  .tech-icons {
+      gap: 10px;
+  }
+  
+  .tech-icons .icon {
+      width: 32px;
+      height: 32px;
+  }
 }
 
-@media (max-width: 575.98px) {
+/* Smartphones */
+@media (max-width: 576px) {
   .navbar-brand {
       font-size: 1.25rem;
   }
@@ -799,5 +716,44 @@ footer a:hover {
   
   .contact-form {
       padding: 1.5rem;
+  }
+
+  .hero-img img {
+      max-width: 250px;
+  }
+  
+  .tech-icons {
+      gap: 8px;
+  }
+  
+  .tech-icons .icon {
+      width: 30px;
+      height: 30px;
+      font-size: 0.9rem;
+  }
+
+  /* Timeline Mobile - Smartphones */
+  .timeline::after {
+      left: 22px;
+  }
+
+  .timeline-item {
+      padding-left: 55px;
+      padding-right: 15px;
+  }
+
+  .timeline-item::after {
+      left: 12px !important;
+      width: 18px;
+      height: 18px;
+  }
+
+  .timeline-content {
+      padding: 1.25rem;
+  }
+
+  .timeline-date {
+      font-size: 0.85rem;
+      padding: 6px 10px;
   }
 }
