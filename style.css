@@ -757,3 +757,68 @@ footer a:hover {
       padding: 6px 10px;
   }
 }
+
+[data-bs-theme="dark"] {
+  --primary-color: #0d6efd;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+[data-bs-theme="dark"] .navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+[data-bs-theme="dark"] .section-title,
+[data-bs-theme="dark"] h1, [data-bs-theme="dark"] h2, [data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4, [data-bs-theme="dark"] h5 {
+  color: #e6edf3;
+}
+
+[data-bs-theme="dark"] .skill-card,
+[data-bs-theme="dark"] .project-card,
+[data-bs-theme="dark"] .contact-info,
+[data-bs-theme="dark"] .contact-form,
+[data-bs-theme="dark"] .skills-progress,
+[data-bs-theme="dark"] .timeline-content {
+  background-color: #161b22;
+  color: #c9d1d9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+[data-bs-theme="dark"] .project-tech span,
+[data-bs-theme="dark"] .skill-tags span {
+  background-color: #21262d;
+  color: #c9d1d9;
+}
+
+[data-bs-theme="dark"] .progress {
+  background-color: #21262d;
+}
+
+[data-bs-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+}
+
+[data-bs-theme="dark"] .hero-section::before {
+  opacity: 0.05;
+}
+
+[data-bs-theme="dark"] a {
+  color: #58a6ff;
+}
+
+[data-bs-theme="dark"] a:hover {
+  color: #79c0ff;
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: #161b22 !important;
+}
+
+[data-bs-theme="dark"] .lead{
+  color: #fff !important;
+}
+
+[data-bs-theme="dark"] .leadBlack {
+  color: #161b22 !important;
+}
